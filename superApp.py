@@ -72,6 +72,7 @@ class MainPage(webapp2.RequestHandler):
             #'guestbook_name': urllib.urlencode(guestbook_name),
             'url': url,
             'url_linktext': url_linktext,
+			'homestate': 'active',
         }
 
         template = JINJA_ENVIRONMENT.get_template('mainpage.html')
